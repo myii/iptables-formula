@@ -19,8 +19,8 @@ services:
 # the `platforms` defined in `kitchen.yml`
 env:
   matrix:
-    - INSTANCE: default-debian-10-develop-py3
-    # - INSTANCE: tables-debian-10-develop-py3
+    # - INSTANCE: default-debian-10-develop-py3
+    - INSTANCE: debian-10-develop-py3
     # - INSTANCE: default-ubuntu-1804-develop-py3
     # - INSTANCE: tables-ubuntu-1804-develop-py3
     # - INSTANCE: default-centos-7-develop-py3
