@@ -13,7 +13,8 @@ cache: bundler
 
 ## Script to run for the test stage
 script:
-  - bin/kitchen verify "${INSTANCE}"
+  - bin/kitchen verify "default-${INSTANCE}"
+  - bin/kitchen verify "tables-${INSTANCE}"
 
 ## Stages and jobs matrix
 stages:
@@ -80,9 +81,9 @@ jobs:
     # - env: INSTANCE=default-debian-9-2019-2-py3
     # - env: INSTANCE=tables-debian-9-2019-2-py3
     - env: INSTANCE=ubuntu-1804-2019-2-py3
-    - env: INSTANCE=\(default\|tables\)-ubuntu-1804-2019-2-py3
-    - env: INSTANCE=default-ubuntu-1804-2019-2-py3
-    - env: INSTANCE=tables-ubuntu-1804-2019-2-py3
+    # - env: INSTANCE=\(default\|tables\)-ubuntu-1804-2019-2-py3
+    # - env: INSTANCE=default-ubuntu-1804-2019-2-py3
+    # - env: INSTANCE=tables-ubuntu-1804-2019-2-py3
     # - env: INSTANCE=tables-ubuntu-1804-2019-2-py3
     # - env: INSTANCE=default-centos-8-2019-2-py3
     # - env: INSTANCE=tables-centos-8-2019-2-py3
