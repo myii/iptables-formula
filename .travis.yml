@@ -61,7 +61,7 @@ jobs:
     ## Define the rest of the matrix based on Kitchen testing
     # Make sure the instances listed below match up with
     # the `platforms` defined in `kitchen.yml`
-    - env: INSTANCE=default-debian-10-master-py3
+    # - env: INSTANCE=default-debian-10-master-py3
     # - env: INSTANCE=tables-debian-10-master-py3
     # - env: INSTANCE=default-ubuntu-1804-master-py3
     # - env: INSTANCE=tables-ubuntu-1804-master-py3
@@ -79,7 +79,10 @@ jobs:
     # - env: INSTANCE=tables-debian-10-2019-2-py3
     # - env: INSTANCE=default-debian-9-2019-2-py3
     # - env: INSTANCE=tables-debian-9-2019-2-py3
+    - env: INSTANCE=ubuntu-1804-2019-2-py3
+    - env: INSTANCE=\(default\|tables\)-ubuntu-1804-2019-2-py3
     - env: INSTANCE=default-ubuntu-1804-2019-2-py3
+    - env: INSTANCE=tables-ubuntu-1804-2019-2-py3
     # - env: INSTANCE=tables-ubuntu-1804-2019-2-py3
     # - env: INSTANCE=default-centos-8-2019-2-py3
     # - env: INSTANCE=tables-centos-8-2019-2-py3
@@ -89,17 +92,17 @@ jobs:
     # - env: INSTANCE=tables-opensuse-leap-151-2019-2-py3
     # - env: INSTANCE=default-centos-7-2019-2-py2
     # - env: INSTANCE=tables-centos-7-2019-2-py2
-    - env: INSTANCE=default-amazonlinux-2-2019-2-py2
+    # - env: INSTANCE=default-amazonlinux-2-2019-2-py2
     # - env: INSTANCE=tables-amazonlinux-2-2019-2-py2
-    - env: INSTANCE=default-arch-base-latest-2019-2-py2
+    # - env: INSTANCE=default-arch-base-latest-2019-2-py2
     # - env: INSTANCE=tables-arch-base-latest-2019-2-py2
-    - env: INSTANCE=default-fedora-30-2018-3-py3
+    # - env: INSTANCE=default-fedora-30-2018-3-py3
     # - env: INSTANCE=tables-fedora-30-2018-3-py3
     # - env: INSTANCE=default-debian-9-2018-3-py2
     # - env: INSTANCE=tables-debian-9-2018-3-py2
     # - env: INSTANCE=default-ubuntu-1604-2018-3-py2
     # - env: INSTANCE=tables-ubuntu-1604-2018-3-py2
-    - env: INSTANCE=default-centos-7-2018-3-py2
+    # - env: INSTANCE=default-centos-7-2018-3-py2
     # - env: INSTANCE=tables-centos-7-2018-3-py2
     # - env: INSTANCE=default-opensuse-leap-151-2018-3-py2
     # - env: INSTANCE=tables-opensuse-leap-151-2018-3-py2
@@ -116,7 +119,7 @@ jobs:
     # - env: INSTANCE=default-fedora-30-2017-7-py2
     # - env: INSTANCE=tables-fedora-30-2017-7-py2
     # - env: INSTANCE=default-opensuse-leap-151-2017-7-py2
-    - env: INSTANCE=tables-opensuse-leap-151-2017-7-py2
+    # - env: INSTANCE=tables-opensuse-leap-151-2017-7-py2
     # - env: INSTANCE=default-amazonlinux-2-2017-7-py2
     # - env: INSTANCE=tables-amazonlinux-2-2017-7-py2
     # - env: INSTANCE=default-arch-base-latest-2017-7-py2
